@@ -6,7 +6,7 @@ def connect_to_db():
     return psycopg2.connect(
         dbname="railway",
         user="postgres",
-        password="BPWIfpAvVIpyFbxMRWJZIYFosPyFkPWM",
+        password="",
         host="junction.proxy.rlwy.net",
         port="15353"
     )
@@ -75,7 +75,7 @@ def check(update: Update, context: CallbackContext):
 # Основной код
 def main():
     # Инициализация бота    
-    updater = Updater("7930081448:AAGWUsGKkCpCc7uQvPD8c1W4VaYkIJi31oE")
+    updater = Updater("")
     dispatcher = updater.dispatcher
 # Обработчики команд    
     dispatcher.add_handler(CommandHandler("start", start))
